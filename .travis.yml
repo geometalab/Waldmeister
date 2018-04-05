@@ -7,8 +7,9 @@ node_js:
   - 0.10
 
 env:
-  - MOZ_HEADLESS=1
-  - PGPORT=5435
+  global:
+    - MOZ_HEADLESS=1
+    - PGPORT=5435
 
 virtualenv:
   system_site_packages: true
